@@ -30,28 +30,29 @@
                             <h2 class="form-heading">Sign up now to get started!</h2>
                             <div class="inputs-container">
                                 <div class="field">
-                                    <label for="first-name">First Name</label>
-                                    <input type="text" name="first-name" required max="100" placeholder="First Name" id="firstName" class="form--input" pattern="[a-zA-Z0-9]{8,}">
+                                    <!-- <label for="first-name">First Name</label> -->
+                                    <input type="text" name="first-name" required placeholder="First Name" id="firstName" class="form--input" pattern="[A-Za-z]\w+" title="Must contain only letters">
                                 </div>
                                 <div class="field">
-                                    <label for="last-name">Last Name</label>
-                                    <input type="text" name="last-name" required max="100" placeholder="Doe..." class="form--input">
+                                    <!-- <label for="last-name">Last Name</label> -->
+                                    <input type="text" name="last-name" required placeholder="Last Name" class="form--input" pattern="[A-Za-z]\w+" title="Must contain only letters">
                                 </div>
                                 <div class="field">
-                                    <label for="email">E-mail</label>
-                                    <input type="email" name="email" required placeholder="examplemail@example.com" class="form--input">
+                                    <!-- <label for="email">E-mail</label> -->
+                                    <input type="email" name="email" required placeholder="E-mail" class="form--input" pattern="[A-Za-z0-9._+-]+@[a-zA-Z0-9 -]+\.[a-z]{2,}">
                                 </div>
                                 <div class="field">
-                                    <label for="phone-num">Phone Number</label>
-                                    <input type="text" name="phone-num" placeholder="+123-456-7890" class="form--input">
+                                    <!-- <p for="phone-num" class="not-required">Not required</p> -->
+                                    <input type="text" name="phone-num" placeholder="Phone Number (Optional)" class="form--input" pattern="[0-9+-]">
+                                    
                                 </div>
                                 <div class="field">
-                                    <label for="password">Password</label>
-                                    <input type="password" name="password" required class="form--input">
+                                    <!-- <label for="password">Password</label> -->
+                                    <input type="password" name="password" required class="form--input" placeholder="Password" pattern="[A-Za-z0-9]{8,}" title="Must be at least 8 characters long">
                                 </div>
                                 <div class="field">
-                                    <label for="password-confirmed">Confirm Password</label>
-                                    <input type="password" name="password-confirmed" required class="form--input">
+                                    <!-- <label for="password-confirmed">Confirm Password</label> -->
+                                    <input type="password" name="password-confirmed" required class="form--input" placeholder="Confirm Password" pattern="[A-Za-z0-9]{8,}" title="Must be at least 8 characters long">
                                 </div>
                             </div>
                         </fieldset>
