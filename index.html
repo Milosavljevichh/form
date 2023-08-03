@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+
     <div id="main-container">
         <div class="image-container">
             <div class="image-background">
                 <img src="images/odin-lined.png" alt="odin-logo" class="logo">
-                <h2 class="logo-text">Odin Project</h2>
+                <h2 class="logo-text">ODIN</h2>
             </div>
         </div>
         
@@ -23,37 +25,40 @@
             </p>
             <p class="slogan">You <em>know</em> you want to!</p>
             <div class="form-block">
-                <form action=""></form>
-                        <h2 class="form-heading">Sign up now to get started!</h2>
-                        <div class="inputs-container">
-                            <div class="field">
-                                <label for="first-name">First Name</label>
-                                <input type="text" name="first-name" required max="100" placeholder="John..." class="form--input">
+                <form action="" method="post">
+                        <fieldset>
+                            <h2 class="form-heading">Sign up now to get started!</h2>
+                            <div class="inputs-container">
+                                <div class="field">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" name="first-name" required max="100" placeholder="First Name" id="firstName" class="form--input" pattern="[a-zA-Z0-9]{8,}">
+                                </div>
+                                <div class="field">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" name="last-name" required max="100" placeholder="Doe..." class="form--input">
+                                </div>
+                                <div class="field">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" name="email" required placeholder="examplemail@example.com" class="form--input">
+                                </div>
+                                <div class="field">
+                                    <label for="phone-num">Phone Number</label>
+                                    <input type="text" name="phone-num" placeholder="+123-456-7890" class="form--input">
+                                </div>
+                                <div class="field">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" required class="form--input">
+                                </div>
+                                <div class="field">
+                                    <label for="password-confirmed">Confirm Password</label>
+                                    <input type="password" name="password-confirmed" required class="form--input">
+                                </div>
                             </div>
-                            <div class="field">
-                                <label for="last-name">Last Name</label>
-                                <input type="text" name="last-name" required max="100" placeholder="Doe..." class="form--input">
-                            </div>
-                            <div class="field">
-                                <label for="email">E-mail</label>
-                                <input type="email" name="email" required placeholder="examplemail@example.com" class="form--input">
-                            </div>
-                            <div class="field">
-                                <label for="phone-num">Phone Number</label>
-                                <input type="text" name="phone-num" placeholder="+123-456-7890" class="form--input">
-                            </div>
-                            <div class="field">
-                                <label for="password">Password</label>
-                                <input type="password" name="password" required class="form--input">
-                            </div>
-                            <div class="field">
-                                <label for="password-confirmed">Confirm Password</label>
-                                <input type="password" name="password-confirmed" required class="form--input">
-                            </div>
-                        </div>
+                        </fieldset>
+                        <button id="create-profile" class="btn" type="submit">Create Account</button>
                 </form>
             </div>
-            <button id="create-profile" class="btn">Create Account</button>
+            
             <p class="login-redirect">Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Log in</a></p>
         </div>
     </div>

@@ -19,6 +19,11 @@ a:hover {
     src: url(fonts/JosefinSans-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: Title;
+    src: url(fonts/AUDIOWIDE/Audiowide-Regular.ttf);
+}
+
 .description, .slogan, .inputs-container, .form-heading, .login-redirect{
     padding-left: 65px;
 }
@@ -52,10 +57,12 @@ h3 {
     margin-right: 15px;
 }
 
-.form-block {
+fieldset {
     background-color: #58b4a8;
     box-shadow: 0 7px 20px #999999;
     color: white;
+    margin: 0;
+    border: none;
 }
 
 p {
@@ -94,8 +101,9 @@ input {
 }
 
 .logo {
-    width: 8em;
+    max-width: 8em;
     height: auto;
+    padding-left: 25px;
 }
 
 .image-background {
@@ -129,9 +137,12 @@ p {
 }
 
 .logo-text {
+    font-family: Title;
     color: white;
-    font-size: 3em;
+    font-size: 4.5em;
     padding-left: 25px;
+    padding-right: 20px;
+    font-weight: 500;
 }
 
 #main-container {
@@ -176,6 +187,8 @@ p {
     background-color: #87dbd0;
    }
    
+
+
 
 
    .form--input {
